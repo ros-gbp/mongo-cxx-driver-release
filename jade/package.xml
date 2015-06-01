@@ -1,0 +1,23 @@
+<package>
+  <name>mongo_cxx_driver</name>
+  <version>:{version}</version>
+  <description>The official C++ client for MongoDB 2.6</description>
+  <maintainer email="vincent.rabaud@gmail.com">Vincent Rabaud</maintainer>
+  <license>Apache 2.0</license>
+
+  <url>https://github.com/mongodb/mongo-cxx-driver</url>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <build_depend>boost</build_depend>
+  <build_depend>git</build_depend>
+  <build_depend>python</build_depend>
+  <build_depend>scons</build_depend>
+
+  <run_depend>boost</run_depend>
+  <run_depend>mongodb</run_depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
