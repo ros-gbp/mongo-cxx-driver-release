@@ -1,0 +1,28 @@
+From e89ce943bf17a14f9f02436213d2cd85979b9ef4 Mon Sep 17 00:00:00 2001
+From: Vincent Rabaud <vincent.rabaud@gmail.com>
+Date: Tue, 2 Jun 2015 01:38:47 +0200
+Subject: [PATCH] add CMake file
+
+---
+ CMakeLists.txt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 CMakeLists.txt
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+new file mode 100644
+index 0000000..3b97988
+--- /dev/null
++++ b/CMakeLists.txt
+@@ -0,0 +1,9 @@
++cmake_minimum_required(VERSION 2.8.3)
++project(mongo_cxx_driver)
++
++add_custom_target(client)
++add_custom_command(TARGET client COMMAND "scons" ARGS "--sharedclient -C${CMAKE_CURRENT_SOURCE_DIR}")
++
++install(CODE "execute_process(COMMAND scons --prefix=\$ENV{DESTDIR}/\${CMAKE_INSTALL_PREFIX} --sharedclient -C${CMAKE_CURRENT_SOURCE_DIR} install)")
++
++install(FILES package.xml DESTINATION share/mongo_cxx_driver)
+-- 
+2.1.4
+
