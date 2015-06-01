@@ -1,0 +1,12 @@
+Source: ros-jade-mongo-cxx-driver
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), cmake, git-core, libboost-all-dev, python-dev, scons
+Homepage: https://github.com/mongodb/mongo-cxx-driver
+Standards-Version: 3.9.2
+
+Package: ros-jade-mongo-cxx-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, mongodb
+Description: The official C++ client for MongoDB 2.6
