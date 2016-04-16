@@ -5,7 +5,9 @@
   <maintainer email="vincent.rabaud@gmail.com">Vincent Rabaud</maintainer>
   <license>Apache 2.0</license>
 
-  <url>https://github.com/mongodb/mongo-cxx-driver</url>
+  <url type="website">http://wiki.ros.org/mongo_cxx_driver</url>
+  <url type="repository">https://github.com/mongodb/mongo-cxx-driver</url>
+  <url type="bugtracker">https://github.com/ros-gbp/mongo_cxx_driver-release</url>
 
   <buildtool_depend>cmake</buildtool_depend>
 
